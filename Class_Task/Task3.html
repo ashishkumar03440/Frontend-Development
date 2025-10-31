@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            direction: column;
+            height: 100vh;
+            background-color: #f8f6f6;
+
+        }
+
+        .grid {
+            display: grid;
+            flex-basis: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            
+
+        }
+
+        .grid img {
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+
+        }
+
+        .grid img:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transform: scale(1.1);
+            overlay: darken 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <img src="bird-9288255_1280.jpg" alt="bird image" width="300" height="300">
+        <img src="candles-9874140_1280.jpg" alt="bird image" width="300" height="300">
+        <img src="duck-9868154_1280.jpg" alt="bird image" width="300" height="300">
+        <img src="grill-8434113_1280.jpg" alt="bird image" width="300" height="300">
+        <img src="inside-dandlion-9865287_1280.jpg" alt="bird image" width="300" height="300">
+        <img src="snail-9868046_1280.jpg" alt="bird image" width="300" height="300">
+    </div>
+
+</body>
+
+</html>

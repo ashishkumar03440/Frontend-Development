@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+            justify-content: center;
+            height: auto;
+            background: floralwhite;
+        }
+
+        .btn{
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: all 0.3s ease-in;
+        }
+        .btn:hover{
+            background-color: #0056b3;
+            transform: scale(1.1);
+            box-shadow: #33ff57;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: #ff5733;
+            box-sizing: border-box;
+            animation: movebox 4s infinite alternate ease-in-out;
+        }
+        @keyframes movebox {
+            0% {
+                transform: translateX(0);
+                background-color: #ff5733;
+            }
+            50% {
+                transform: translateX(150px) rotate(20deg);
+                background-color: #33ff57;
+            }
+            100% {
+                transform: translateX(300px);
+                background-color: #7a625d;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Css annimation demo</h1>
+    <button class="btn"> Hover Me</button>
+    <div class="box">
+
+
+    </div>
+
+</body>
+</html>

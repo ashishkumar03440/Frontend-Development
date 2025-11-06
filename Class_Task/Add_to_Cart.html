@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Store</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at center, #4c87ba, hsl(207, 24%, 59%));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    figcaption {
+      font-size: 1.2em;
+      margin: 15px 0;
+      color: #333;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #015aa8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #000000;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    
+  <div class="container">
+    <div class="card">
+      <img src="imac.jpg" alt="iMac Image">
+      <figcaption>I-Mac</figcaption>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="iphone.jpg" alt="iPhone Image">
+      <figcaption>I-Phone</figcaption>
+      <button>Add To Cart</button>
+    </div>
+    <div class="card">
+      <img src="ipad.jpg" alt="iPad Image">
+      <figcaption>I-Pad</figcaption>
+      <button>Add To Cart</button>
+    </div>
+  </div>
 </body>
 </html>
